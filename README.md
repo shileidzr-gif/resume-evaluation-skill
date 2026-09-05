@@ -66,7 +66,17 @@ Quick resume screening: give me fit score, decision, top 3 strengths,
 top 3 risks, and 5 interview questions.
 ```
 
-See `examples/` for fictional sample inputs and `references/output-example.md` for an example assessment.
+## Public use cases
+
+See how the skill behaves in realistic fictional hiring scenarios:
+
+- [Country HR Manager](examples/use-case-country-hr-manager.md) — local HR, employee relations, payroll, compliance, team leadership
+- [Operations Manager](examples/use-case-operations-manager.md) — frontline scale, KPIs, labor planning, quality, safety, productivity
+- [Country Manager](examples/use-case-country-manager.md) — P&L, growth, multi-function leadership, organization scale, commercial execution
+
+These examples are synthetic and contain no real candidate data.
+
+See `examples/` for additional fictional sample inputs and `references/output-example.md` for an example assessment.
 
 ## Output structure
 
@@ -126,7 +136,10 @@ resume-evaluation-skill/
 │   └── fair-hiring-and-privacy.md
 └── examples/
     ├── sample-jd.md
-    └── sample-candidate.md
+    ├── sample-candidate.md
+    ├── use-case-country-hr-manager.md
+    ├── use-case-operations-manager.md
+    └── use-case-country-manager.md
 ```
 
 ## License
@@ -135,7 +148,7 @@ MIT License. See `LICENSE`.
 
 ## Version
 
-**2.1.0 — Public Edition**
+**2.2.0 — Growth Edition**
 
 ### Search keywords
 
