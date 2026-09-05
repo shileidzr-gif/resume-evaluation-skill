@@ -1,38 +1,87 @@
-# Resume Evaluation — Agent Skill
+# Resume Evaluation — Evidence-Based Hiring Decision Skill
 
-An evidence-based recruiting skill for evaluating a candidate CV/resume against a target role or job description.
+A practical **resume screening / CV evaluation / candidate assessment** Agent Skill for recruiters, HR professionals, and hiring managers.
+
+Evaluate a candidate **CV or resume against a target job description** and get a structured, evidence-based recommendation: **Strong Advance / Advance / Hold / Reject**.
+
+> Built for the employer side of hiring — not resume rewriting.
 
 ## What it does
 
-- Builds a role scorecard from a JD or role title.
-- Checks critical Hard Gates first.
-- Separates explicit evidence from inference.
-- Scores overall job fit.
-- Identifies strengths, confirmed gaps, evidence gaps, and interview verification points.
-- Generates targeted interview questions.
-- Produces a clear **Strong Advance / Advance / Hold / Reject** recommendation.
-- Supports side-by-side comparison of multiple candidates.
+- Builds a role scorecard from a JD or role title
+- Checks **Hard Gates / must-have requirements** first
+- Separates explicit resume evidence from inference
+- Scores overall **job fit / candidate-role match**
+- Identifies strengths, confirmed gaps, evidence gaps, and verification points
+- Grades evidence quality instead of relying on keywords alone
+- Generates targeted behavioral interview questions
+- Produces a clear **Strong Advance / Advance / Hold / Reject** recommendation
+- Supports side-by-side ranking of multiple candidates
+
+## Best for
+
+- Resume screening
+- CV evaluation
+- Candidate assessment
+- Job-fit analysis
+- Recruiter shortlisting
+- Hiring-manager review
+- Interview preparation
+- Candidate comparison
+- HR / Talent Acquisition workflows
 
 ## Why this skill is different
 
-Many resume tools optimize for rewriting resumes or keyword matching. This skill is designed for the **employer / recruiter / hiring-manager side** of the decision and emphasizes evidence, job relevance, and interview follow-up.
+Many resume tools focus on rewriting a candidate's resume or matching keywords. This skill is designed for **recruiters and hiring managers making a selection decision**.
 
-## Requirements
+It focuses on three things:
 
-Minimum input:
-1. Candidate CV/resume
+1. **Hard Gates** — does the candidate meet the truly critical requirements?
+2. **Evidence Level** — is the claimed experience actually supported by scope, ownership, duration, metrics, geography, or outcomes?
+3. **Hiring Decision** — what should the recruiter do next, and what must be verified in interview?
+
+## Minimum input
+
+1. Candidate CV / resume
 2. Target role or job description
 
-LinkedIn is optional.
+Optional context can include hiring country, seniority, industry, language requirements, compensation range, must-have constraints, LinkedIn profile, or recruiter notes.
 
-## Example prompt
+**LinkedIn is optional.**
+
+## Example prompts
 
 ```text
 Evaluate this CV for a Country HR Manager role. Focus on local HR experience,
 employee relations, payroll, recruiting, team leadership, and stakeholder management.
 ```
 
+```text
+Compare these three candidates against the same Operations Manager JD and rank them.
+Show Hard Gates, fit score, main risks, and recommended interview focus.
+```
+
+```text
+Quick resume screening: give me fit score, decision, top 3 strengths,
+top 3 risks, and 5 interview questions.
+```
+
 See `examples/` for fictional sample inputs and `references/output-example.md` for an example assessment.
+
+## Output structure
+
+Typical output includes:
+
+- Overall fit score
+- Hiring recommendation
+- Hard Gate check
+- Candidate snapshot
+- Core experience relevance
+- Evidence-backed strengths
+- Confirmed gaps vs. not-evidenced items
+- Interview verification points
+- Targeted interview questions
+- Final hiring view
 
 ## Install from GitHub
 
@@ -40,17 +89,45 @@ See `examples/` for fictional sample inputs and `references/output-example.md` f
 npx skills add https://github.com/shileidzr-gif/resume-evaluation-skill --skill resume-evaluation
 ```
 
-Check the installer you use before running third-party commands.
+Review third-party installation commands before running them in your environment.
 
 ## SkillsMP discovery
 
-SkillsMP indexes public GitHub repositories containing a `SKILL.md` with valid frontmatter. Add repository topics such as `claude-skills` or `claude-code-skill` to improve discovery.
+This repository is designed to be indexed by public Agent Skill marketplaces such as SkillsMP.
 
-## Responsible use
+Recommended repository topics:
 
-This skill is decision support, not autonomous hiring authority. Keep a human reviewer accountable for material decisions and follow applicable employment, anti-discrimination, privacy, and AI-governance requirements.
+`claude-skills` · `claude-code-skill` · `agent-skills` · `resume-screening` · `candidate-assessment` · `recruiting` · `human-resources`
+
+## Responsible hiring and privacy
+
+This skill is **decision support**, not autonomous hiring authority.
+
+- Do not use protected characteristics as positive or negative hiring signals
+- Do not infer sensitive traits from names, photos, schools, locations, or affiliations
+- Avoid reproducing unnecessary personal data from resumes
+- Treat `Not Evidenced` differently from `Not Met`
+- Keep a qualified human reviewer accountable for material hiring decisions
+- Follow applicable employment, anti-discrimination, privacy, and AI-governance requirements
 
 See `references/fair-hiring-and-privacy.md`.
+
+## Skill files
+
+```text
+resume-evaluation-skill/
+├── SKILL.md
+├── README.md
+├── LICENSE
+├── CHANGELOG.md
+├── references/
+│   ├── scoring-rubric.md
+│   ├── output-example.md
+│   └── fair-hiring-and-privacy.md
+└── examples/
+    ├── sample-jd.md
+    └── sample-candidate.md
+```
 
 ## License
 
@@ -58,4 +135,8 @@ MIT License. See `LICENSE`.
 
 ## Version
 
-2.1.0 — Public Edition
+**2.1.0 — Public Edition**
+
+### Search keywords
+
+resume evaluation, CV evaluation, resume screening, candidate screening, candidate assessment, job fit analysis, hiring decision, recruiter assistant, talent acquisition, HR recruitment, interview questions, candidate ranking, evidence-based hiring
