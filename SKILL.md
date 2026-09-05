@@ -2,7 +2,7 @@
 name: resume-evaluation
 description: Evidence-based candidate CV/resume evaluation against a target role or job description. Use for resume screening, CV evaluation, candidate assessment, job-fit analysis, hiring recommendations, interview focus, or comparing multiple candidates. Requires a CV/resume plus a target role or JD; LinkedIn is optional.
 metadata:
-  version: "2.1.0"
+  version: "2.2.0"
   category: recruiting
   tags:
     - recruiting
@@ -165,6 +165,14 @@ If the user asks for a short or fast assessment, output only:
 - Do not infer sensitive attributes from names, photos, schools, locations, or affiliations.
 - Do not make medical, psychological, personality, or criminal-history inferences from unrelated resume information.
 - Evaluate only job-relevant evidence.
+
+## Public Use Cases
+Fictional examples are available in `examples/`:
+- `use-case-country-hr-manager.md`
+- `use-case-operations-manager.md`
+- `use-case-country-manager.md`
+
+These examples are synthetic and must not be treated as real candidate data.
 
 ## Quality Check
 Before answering, verify that:
